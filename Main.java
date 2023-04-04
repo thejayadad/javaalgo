@@ -6,11 +6,13 @@ public class Main {
         sda.insert(0, 10);
         sda.insert(1, 20);
         sda.insert(2, 20);
-  
 
+        // var firstElement = sda.arr[0];
+        // System.out.println(firstElement);
 
-        var firstElement = sda.arr[0];
-        System.out.println(firstElement);
+        System.out.println("Array Traversal");
+        sda.traverseArray();
+
 
     }
 

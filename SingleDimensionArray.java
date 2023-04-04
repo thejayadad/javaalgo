@@ -28,4 +28,19 @@ public class SingleDimensionArray {
 
     }
 
+    //Array Traversal
+    public void traverseArray(){
+
+        try {
+            for(int i = 0; i < arr.length; i++){
+                System.out.print(arr[i] + " ");
+            }
+
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("Array no longer exists");
+        }
+
+    }
+
 }
