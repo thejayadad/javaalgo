@@ -43,7 +43,7 @@ public class SingleDimensionArray {
 
     }
 
-    //SEARCH FOR ELEMENT IN ARRAY
+    //SEARCH FOR ELEMENT IN ARRAY LINEAR SEARCH
     public void searchInArray(int valueToSearch ){
         for (int i = 0; i < arr.length; i++){
             if(arr[i] == valueToSearch){
@@ -52,6 +52,17 @@ public class SingleDimensionArray {
             }
         }
         System.out.println("Value not found " + valueToSearch );
+    }
+
+    //DELETE VALUE FROM ARRAY
+    public void deleteValue(int valueToDeleteIndex){
+        try {
+            arr[valueToDeleteIndex] = Integer.MIN_VALUE;
+            System.out.println("Value has been deleted");
+        } catch (Exception e) {
+            // TODO: handle exception
+            System.out.println("Value provided not in range of array");
+        }
     }
 
 }

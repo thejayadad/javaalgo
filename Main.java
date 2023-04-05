@@ -13,8 +13,10 @@ public class Main {
         // System.out.println("Array Traversal");
         // sda.traverseArray();
 
-        sda.searchInArray(8);
+        // sda.searchInArray(8);
 
+        sda.deleteValue(0);
+        System.out.println(sda.arr[0]);
 
 
     }
